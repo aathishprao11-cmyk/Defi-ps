@@ -115,8 +115,8 @@ contract Chainproof {
     * and because the mapping is private, these achievements are verifiably untransferable
     * This protects ecosystem integrity by preventing bad people from buying reputation.
     */
-    function getCredentials(address _member) external view returns (Credential[] memory) {
-        return memberCredentials[_member];
+    function getCredentials(address member_) external view returns (Credential[] memory) {
+        return memberCredentials[member_];
     }
 
     function sqrt(uint256 x) internal pure returns (uint256 y) {
